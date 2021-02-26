@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  a {
+    color: #000000;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

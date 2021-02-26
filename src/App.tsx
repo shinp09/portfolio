@@ -5,10 +5,11 @@ import Skill from "./components/Page/Skill/Skill";
 import Contact from "./components/Page/Contact/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Organisms/Header/Header";
+import style from "./App.module.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className={style.App}>
       <Router>
         <Header />
         <Switch>

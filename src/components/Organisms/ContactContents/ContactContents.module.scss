@@ -1,0 +1,19 @@
+.icon_contents {
+  text-align: center;
+  .img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+  .icon {
+    padding: 10px;
+    font-size: 70px;
+    color: #000000;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

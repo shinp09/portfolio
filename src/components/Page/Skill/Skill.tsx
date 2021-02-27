@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "../../Atoms/Card/Card";
 import image1 from "../../../assets/Search-Music.jpeg";
-// import image2 from "../../../assets/Search-Music.jpeg";
 import image3 from "../../../assets/Media.jpeg";
+import image4 from "../../../assets/Gift.png";
 import image5 from "../../../assets/ShoppingGuide.png";
 import image6 from "../../../assets/modalu.jpeg";
 import style from "./Skill.module.scss";
@@ -11,7 +11,6 @@ const Skill: React.FC = () => {
   return (
     <div>
       <h2>Skill</h2>
-      <p>フロントエンジニアの学習として</p>
       <div className={style.cards}>
         <Card
           image={image1}
@@ -22,7 +21,7 @@ const Skill: React.FC = () => {
         <Card
           image={"2"}
           title={"ポートフォリオ"}
-          text={"React + TypeScript + Scssを使ったポートフォリオを作成しました"}
+          text={"React + TypeScript + Scssを使ったポートフォリオ"}
           link={"2"}
         />
         <Card
@@ -32,9 +31,9 @@ const Skill: React.FC = () => {
           link={"https://www.rakuten.ne.jp/gold/gooddealweb/media/index2.html"}
         />
         <Card
-          image={"4"}
+          image={image4}
           title={"LP作成"}
-          text={"前職で作成したギフト特集"}
+          text={"作成したギフト特集"}
           link={
             "https://www.rakuten.ne.jp/gold/gooddealweb/toku2/toku17-gift.html"
           }
@@ -42,7 +41,7 @@ const Skill: React.FC = () => {
         <Card
           image={image5}
           title={"お買い物ガイド"}
-          text={""}
+          text={"注意事項や必要事項をまとめました"}
           link={
             "https://www.rakuten.ne.jp/gold/gooddealweb/company/company.html"
           }
@@ -50,7 +49,7 @@ const Skill: React.FC = () => {
         <Card
           image={image6}
           title={"モーダルウィンドウ"}
-          text={""}
+          text={"Phtoshopを使用し、バナー作成から行いました"}
           link={"https://www.rakuten.ne.jp/gold/gooddealweb/index-test.html"}
         />
       </div>

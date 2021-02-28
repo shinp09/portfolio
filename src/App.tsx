@@ -1,8 +1,8 @@
 import * as React from "react";
-import Home from "./components/Page/Home/Home";
-import About from "./components/Page/About/About";
-import Skill from "./components/Page/Skill/Skill";
-import Contact from "./components/Page/Contact/Contact";
+import Home from "./components/Page/Home";
+import About from "./components/Page/About";
+import Skill from "./components/Page/Skill";
+import Contact from "./components/Page/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Organisms/Header/Header";
 import style from "./App.module.scss";

@@ -1,0 +1,33 @@
+.container {
+  width: 780px;
+  margin: 100px auto;
+
+  .text {
+    text-align: left;
+  }
+  .name {
+    text-align: center;
+    margin: 100px 0;
+  }
+  /* アニメーション */
+  animation: fadeIn 3s linear;
+  animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cards {
+  display: flex;
+  width: 780px;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

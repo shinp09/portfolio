@@ -1,16 +1,16 @@
 import React from "react";
-import Card from "../../Atoms/Card/Card";
-import image1 from "../../../assets/Search-Music.jpeg";
-import image3 from "../../../assets/Media.jpeg";
-import image4 from "../../../assets/Gift.png";
-import image5 from "../../../assets/ShoppingGuide.png";
-import image6 from "../../../assets/modalu.jpeg";
-import style from "./Skill.module.scss";
+import Card from "../Atoms/Card/Card";
+import image1 from "../../assets/Search-Music.jpeg";
+import image3 from "../../assets/Media.jpeg";
+import image4 from "../../assets/Gift.png";
+import image5 from "../../assets/ShoppingGuide.png";
+import image6 from "../../assets/modalu.jpeg";
+import style from "./Page.module.scss";
 
 const Skill: React.FC = () => {
   return (
     <div>
-      <h2>Skill</h2>
+      <h2 className={style.container}>Skill</h2>
       <div className={style.cards}>
         <Card
           image={image1}

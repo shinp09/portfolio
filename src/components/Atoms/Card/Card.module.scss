@@ -25,4 +25,18 @@
       opacity: 0.6;
     }
   }
+  /* アニメーション */
+  animation: fadeIn 2s linear;
+  animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

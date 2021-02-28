@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import posed from "react-pose";
 import style from "./Border.module.scss";
 
 const Border: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const isVisible: boolean = true;
 
   const props = {
     visible: { opacity: 1 },
@@ -11,16 +11,6 @@ const Border: React.FC = () => {
   };
 
   const Box = posed.div(props);
-
-  useEffect(() => {
-    setInterval(() => {
-      if (isVisible === true) {
-      } else {
-        setIsVisible(false);
-      }
-    }, 1000);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <div>

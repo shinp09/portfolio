@@ -5,7 +5,10 @@ const Home: React.FC = () => {
   return (
     <div>
       <div className={style.container}>
-        <div className={style.name}>Shinpei Mukaiyama</div>
+        <div className={style.name}>
+          Shinpei Mukaiyama
+          <br />- Portfolio -
+        </div>
       </div>
     </div>
   );

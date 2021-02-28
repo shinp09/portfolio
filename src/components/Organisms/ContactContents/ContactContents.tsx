@@ -21,6 +21,11 @@ const ContactContents: React.FC = () => {
         >
           <img src={wantedly} alt="logo" className={style.img} />
         </a>
+        <p className={style.text}>
+          E-mail
+          <br />
+          shinp09@gmail.com
+        </p>
       </div>
     </div>
   );

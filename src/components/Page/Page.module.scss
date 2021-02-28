@@ -1,16 +1,25 @@
 .container {
   width: 780px;
-  margin: 100px auto;
-
+  margin: 50px auto;
+  color: #333333;
   .text {
     text-align: left;
   }
   .name {
+    font-family: "Oswald", sans-serif;
+    color: #333333;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 2px;
     text-align: center;
-    margin: 100px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
   }
   /* アニメーション */
-  animation: fadeIn 3s linear;
+  animation: fadeIn 1s linear;
   animation-fill-mode: both;
 }
 /* ---------------------------- */
@@ -24,10 +33,21 @@
     opacity: 1;
   }
 }
+
 .cards {
   display: flex;
-  width: 780px;
+  width: 800px;
   margin: auto;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.scrollBar {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (max-width: 480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    width: 50%;
+  }
 }

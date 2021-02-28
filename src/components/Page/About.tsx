@@ -1,11 +1,15 @@
 import React from "react";
 import AboutContents from "../Organisms/AboutContents/AboutContents";
 import style from "./Page.module.scss";
+import { Scrollbars } from "react-custom-scrollbars";
 
 const About: React.FC = () => {
   return (
     <div className={style.container}>
-      <AboutContents />
+      <h2>About</h2>
+      <Scrollbars className={style.scrollBar} autoHeight autoHeightMax={500}>
+        <AboutContents />
+      </Scrollbars>
     </div>
   );
 };

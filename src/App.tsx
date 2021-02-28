@@ -6,10 +6,12 @@ import Contact from "./components/Page/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Organisms/Header/Header";
 import style from "./App.module.scss";
+import Border from "./components/Atoms/Border/Border";
 
 function App() {
   return (
     <div className={style.App}>
+      <Border />
       <Router>
         <Header />
         <Switch>

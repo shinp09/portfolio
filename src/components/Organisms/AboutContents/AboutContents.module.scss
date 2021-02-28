@@ -1,9 +1,14 @@
 .textContents {
-  width: 780px;
-  margin: auto;
   text-align: left;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  @media screen and (max-width: 480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    padding: 0 10px;
+    font-size: 6px;
+  }
   /* アニメーション */
-  animation: fadeIn 2s linear;
+  animation: fadeIn 1s linear;
   animation-fill-mode: both;
 }
 /* ---------------------------- */

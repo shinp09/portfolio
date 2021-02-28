@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <div className={style.container}>
       <h2>About</h2>
-      <Scrollbars className={style.scrollBar} autoHeight autoHeightMax={500}>
+      <Scrollbars className={style.scrollBar} autoHeight autoHeightMax={400}>
         <AboutContents />
       </Scrollbars>
     </div>

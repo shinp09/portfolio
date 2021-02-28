@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "../Atoms/Card/Card";
 import image1 from "../../assets/Search-Music.jpeg";
+import image2 from "../../assets/portfolio.png";
 import image3 from "../../assets/Media.jpeg";
-import image4 from "../../assets/Gift.png";
 import image5 from "../../assets/ShoppingGuide.png";
 import image6 from "../../assets/modalu.jpeg";
 import style from "./Page.module.scss";
@@ -12,7 +12,7 @@ const Skill: React.FC = () => {
   return (
     <div>
       <h2 className={style.container}>Skill</h2>
-      <Scrollbars autoHeight autoHeightMax={500} className={style.scrollBar}>
+      <Scrollbars autoHeight autoHeightMax={400} className={style.scrollBar}>
         <div className={style.cards}>
           <Card
             image={image1}
@@ -21,10 +21,12 @@ const Skill: React.FC = () => {
             link={"https://search-music-f43a5.web.app/"}
           />
           <Card
-            image={"2"}
+            image={image2}
             title={"ポートフォリオ"}
-            text={"React + TypeScript + Scssを使ったポートフォリオ"}
-            link={"2"}
+            text={
+              "React + TypeScript + Scssを使ったポートフォリオ ※レスポンシブ非対応"
+            }
+            link={"https://shin-portfolio.web.app/Skill"}
           />
           <Card
             image={image3}
@@ -32,14 +34,6 @@ const Skill: React.FC = () => {
             text={"雑誌掲載一覧ページ"}
             link={
               "https://www.rakuten.ne.jp/gold/gooddealweb/media/index2.html"
-            }
-          />
-          <Card
-            image={image4}
-            title={"LP作成"}
-            text={"作成したギフト特集"}
-            link={
-              "https://www.rakuten.ne.jp/gold/gooddealweb/toku2/toku17-gift.html"
             }
           />
           <Card

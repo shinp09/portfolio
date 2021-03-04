@@ -1,6 +1,6 @@
 .container {
-  width: 780px;
-  margin: 10px auto;
+  max-width: 780px;
+  margin: 100px auto;
   color: #333333;
   .text {
     text-align: left;
@@ -17,6 +17,14 @@
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
+    @media screen and (max-width: 640px) {
+      /*　画面サイズが480pxからはここを読み込む　*/
+      font-size: 3em;
+    }
+    @media screen and (max-width: 460px) {
+      /*　画面サイズが480pxからはここを読み込む　*/
+      font-size: 1.8em;
+    }
   }
   /* アニメーション */
   animation: fadeIn 1s linear;
@@ -36,8 +44,22 @@
 
 .cards {
   display: flex;
-  width: 800px;
+  max-width: 780px;
   margin: auto;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 85%;
+  border: solid 20px #1db954;
+  z-index: 1;
+  pointer-events: none;
 }

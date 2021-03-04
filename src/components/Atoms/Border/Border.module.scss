@@ -10,8 +10,18 @@
   border: solid 20px #1db954;
   z-index: 1;
   pointer-events: none;
-}
-
-.border-visible {
-  opacity: 1 !important;
+  /* アニメーション */
+  animation: fadeOut 2s linear;
+  animation-fill-mode: both;
+  /* ---------------------------- */
+  /* --- Animation --- */
+  /* ---------------------------- */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }

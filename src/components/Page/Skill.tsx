@@ -6,10 +6,12 @@ import image3 from "../../assets/Media.jpeg";
 import image5 from "../../assets/ShoppingGuide.png";
 import image6 from "../../assets/modalu.jpeg";
 import style from "./Page.module.scss";
+import Border from "../Atoms/Border/Border";
 
 const Skill: React.FC = () => {
   return (
     <div>
+      <Border />
       <h2 className={style.container}>Skill</h2>
       <div className={style.cards}>
         <Card

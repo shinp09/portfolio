@@ -2,8 +2,9 @@
   display: flex;
   list-style: none;
   justify-content: space-around;
-  margin-top: 100px;
+  margin: 100px auto;
   padding: 0;
+  max-width: 780px;
   a {
     color: #696969;
     text-decoration: none;
@@ -14,5 +15,19 @@
       background-color: red;
       opacity: 0.8;
     }
+  }
+  /* アニメーション */
+  animation: fadeIn 1s linear;
+  animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

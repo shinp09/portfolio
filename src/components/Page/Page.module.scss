@@ -41,13 +41,3 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-.scrollBar {
-  display: block;
-  margin: 0 auto;
-  max-width: 1200px;
-  @media screen and (max-width: 480px) {
-    /*　画面サイズが480pxからはここを読み込む　*/
-    width: 50%;
-  }
-}

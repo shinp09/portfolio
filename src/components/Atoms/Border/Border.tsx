@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import posed from "react-pose";
 import style from "./Border.module.scss";
 
 const Border: React.FC = () => {
-  const isVisible: boolean = true;
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const props = {
     visible: { opacity: 1 },
@@ -12,9 +12,15 @@ const Border: React.FC = () => {
 
   const Box = posed.div(props);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 1000);
+  }, []);
+
   return (
     <div>
-      <Box className={style.border} pose={isVisible ? "visible" : "hidden"} />
+      <Box className={style.border} pose={isVisible ? "hidden" : "visible"} />
     </div>
   );
 };
